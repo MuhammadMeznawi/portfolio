@@ -84,16 +84,24 @@
               <nav :class="{ 'mobile-menu-active': isActive }" data-tag="">
                 <ul data-tag="">
                   <li data-tag="">
-                    <a href="#work" data-tag="">Work</a>
+                    <a href="#work" @click="isActive = false" data-tag=""
+                      >Work</a
+                    >
                   </li>
                   <li data-tag="">
-                    <a href="#about" data-tag="">About</a>
+                    <a href="#about" @click="isActive = false" data-tag=""
+                      >About</a
+                    >
                   </li>
                   <li data-tag="">
-                    <a href="#services" data-tag="">Services</a>
+                    <a href="#services" @click="isActive = false" data-tag=""
+                      >Services</a
+                    >
                   </li>
                   <li data-tag="">
-                    <a href="#contact" data-tag="">Contact</a>
+                    <a href="#contact" @click="isActive = false" data-tag=""
+                      >Contact</a
+                    >
                   </li>
                 </ul>
               </nav>

@@ -48,3 +48,14 @@ document.querySelectorAll('a[href="#contact"]').forEach((anchor) => {
     });
   });
 });
+document.addEventListener("DOMContentLoaded", () => {
+  const nav = document.querySelector("nav");
+  const links = nav.querySelectorAll("a");
+
+  links.forEach((link) => {
+    link.addEventListener("click", () => {
+      nav.classList.remove("mobile-menu-active");
+      document.body.classList.remove("mobile-menu-active"); // Optional: if you're locking scrolling on `body`
+    });
+  });
+});
