@@ -39,12 +39,12 @@ gsap.from(".work-item", {
   stagger: 0.2,
   ease: "power2.out",
 });
-document
-  .querySelector('a[href="#contact"]')
-  .addEventListener("click", (event) => {
+document.querySelectorAll('a[href="#contact"]').forEach((anchor) => {
+  anchor.addEventListener("click", (event) => {
     event.preventDefault();
     window.scrollTo({
       top: document.body.scrollHeight,
       behavior: "smooth",
     });
   });
+});
